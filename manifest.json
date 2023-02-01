@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Hridoy Launcher",
+  "description": "Quick social media launcher for Hridoy Mozumder.",
+  "version": "1.0.0",
+  "icons": { "128": "./icons/icon128.png" },
+  "permissions": ["storage", "contextMenus"],
+  "browser_action": {
+    "default_icon": "./icons/icon19.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "persistent": true,
+    "scripts": ["eventPage.js"]
+  }
+}
