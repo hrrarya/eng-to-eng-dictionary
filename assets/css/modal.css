@@ -1,0 +1,25 @@
+.arya-check-meaning-container p {
+  margin: 0;
+  padding: 0;
+}
+.arya-check-meaning-container .arya-check-meaning-selectionText {
+  border-bottom: 2px solid gray;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.arya-check-meaning-container .swal2-html-container,
+.arya-check-meaning-container .swal2-title {
+  text-align: left;
+}
+.arya-check-meaning-partsofspeech {
+  font-style: italic;
+  color: blue;
+  margin-left: 5px;
+}
+.arya-check-meaning-synonyms span {
+  font-weight: bold;
+  font-style: normal;
+}
+.arya-check-meaning-synonyms {
+  font-style: italic;
+}

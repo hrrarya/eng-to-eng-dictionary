@@ -1,0 +1,11 @@
+{
+  "name": "eng-to-eng-dictionary",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hrrarya/eng-to-eng-dictionary.git",
+  "author": "Hridoy Mozumder <hrrarya6@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "sweetalert2": "^11.7.1"
+  }
+}

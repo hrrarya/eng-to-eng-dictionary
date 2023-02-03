@@ -4,118 +4,74 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hridoy Launcher</title>
+    <title>Simple English-English Dictionary</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Open+Sans"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
     <style>
-      html,
-      body {
-        font-family: "Open Sans", sans-serif;
-        font-size: 14px;
-        margin: 0;
-        min-height: 180px;
-        padding: 5px;
-        width: 384px;
+      .arya-check-meaning-popup {
+        width: 250px;
       }
-
-      h1 {
+      .arya-check-meaning-popup .credit a {
+        font-weight: bold;
+      }
+      .arya-check-meaning-popup h1 {
         font-family: "Menlo", monospace;
         font-size: 22px;
         font-weight: 400;
         margin: 0;
         color: #2f5876;
       }
-      a:link,
-      a:visited {
+      .arya-check-meaning-popup a:link,
+      .arya-check-meaning-popup a:visited {
         color: #000;
         text-decoration: none;
         outline: 0;
       }
-      img {
+      .arya-check-meaning-popup img {
         width: 30px;
       }
-      .modal-header {
+      .arya-check-meaning-popup .modal-header {
         align-items: center;
         border-bottom: 0.5px solid #dadada;
       }
-      .modal-content {
+      .arya-check-meaning-popup .modal-content {
         padding: 0 22px;
       }
-      .modal-header,
-      .modal-content {
+      .arya-check-meaning-popup .modal-header,
+      .arya-check-meaning-popup .modal-content {
         text-align: center;
       }
-      .modal-icons {
+      .arya-check-meaning-popup .modal-icons {
         border-top: 0.5px solid #dadada;
         height: 50px;
         width: 100%;
       }
 
-      .logo {
+      .arya-check-meaning-popup .logo {
         padding: 16px;
       }
-      .logo-icons {
+      .arya-check-meaning-popup .logo-icons {
         vertical-align: text-bottom;
         margin-right: 12px;
       }
-      .version {
+      .arya-check-meaning-popup .version {
         color: #444;
         font-size: 18px;
-      }
-      .flex-container {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 22px;
-      }
-      .flex {
-        opacity: 1;
-        transition: opacity 0.2s ease-in-out;
-        width: 120px;
-      }
-      .flex:hover {
-        opacity: 0.4;
-      }
-      .flex .fa {
-        font-size: 40px;
-        color: #2f5876;
       }
     </style>
   </head>
   <body>
-    <div class="modal-header">
-      <h1>Hridoy Launcher <span class="version">(1.0.0)</span></h1>
-    </div>
-    <div class="modal-content">Easily Access Social Media</div>
-    <div class="modal-icons">
-      <div class="flex-container">
-        <div class="flex">
-          <a href="https://facebook.com/hrrarya" target="_blank"
-            ><span class="fa fa-facebook"></span
-          ></a>
-        </div>
-        <div class="flex">
-          <a href="https://twitter.com/HRRarya" target="_blank"
-            ><span class="fa fa-twitter"></span
-          ></a>
-        </div>
-        <div class="flex">
-          <a href="https://github.com/hrrarya" target="_blank"
-            ><span class="fa fa-github"></span
-          ></a>
-        </div>
-        <div class="flex">
-          <a href="https://www.linkedin.com/in/hrrarya" target="_blank"
-            ><span class="fa fa-linkedin"></span
-          ></a>
-        </div>
+    <div class="arya-check-meaning-popup">
+      <div class="modal-header">
+        <h1>English-English Dictionary <span class="version">(1.0.0)</span></h1>
       </div>
+      <div class="modal-content">Easily Check the meaning.</div>
+      <p class="credit">
+        API Credit:
+        <a href="https://dictionaryapi.dev/">Free Dictionary API</a>
+      </p>
     </div>
     <script src="./popup.js"></script>
   </body>

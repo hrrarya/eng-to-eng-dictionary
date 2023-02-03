@@ -1,16 +1,24 @@
 {
   "manifest_version": 2,
-  "name": "Hridoy Launcher",
-  "description": "Quick social media launcher for Hridoy Mozumder.",
+  "name": "Simple English-English Dictionary",
+  "description": "Check English word meaning simply select the text.",
   "version": "1.0.0",
   "icons": { "128": "./icons/icon128.png" },
-  "permissions": ["storage", "contextMenus"],
+  "permissions": ["activeTab", "storage", "contextMenus"],
   "browser_action": {
     "default_icon": "./icons/icon19.png",
     "default_popup": "popup.html"
   },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "file://*/*"],
+      "css": ["./assets/css/modal.css"],
+      "js": ["./assets/js/sweetalert2.min.js", "./assets/js/contentscripts.js"],
+      "run_at": "document_end"
+    }
+  ],
   "background": {
     "persistent": true,
-    "scripts": ["eventPage.js"]
+    "scripts": ["./assets/js/eventPage.js"]
   }
 }
